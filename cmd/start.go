@@ -141,11 +141,15 @@ func startCmd() *cobra.Command {
 
 	cmd.Flags().String(flagHome, defaultHomePath, "Home path")
 	cmd.Flags().String(flagEndpoint, defaultEndpoint, "Rpc endpoint")
-	cmd.Flags().String(flagAccount, "", "Account hex string address")
 	cmd.Flags().String(flagGasLimit, defaultGasLimit, "Gas limit")
 	cmd.Flags().String(flagMaxGasPrice, defaultMaxGasPrice, "Max gas price")
-	cmd.Flags().String(flagStakeManager, "", "Stake manager contract address")
 	cmd.Flags().String(flagLogLevel, defaultLogLevel, "The logging level (trace|debug|info|warn|error|fatal|panic)")
+
+	// Required flags
+	cmd.Flags().String(flagAccount, "", "Account hex string address")
+	cmd.Flags().String(flagStakeManager, "", "Stake manager contract address")
+	cmd.MarkFlagRequired(flagAccount)
+	cmd.MarkFlagRequired(flagStakeManager)
 
 	return cmd
 }
