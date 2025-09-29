@@ -602,6 +602,19 @@
   },
   {
     "type": "function",
+    "name": "setUnbondingFee",
+    "inputs": [
+      {
+        "name": "_unbondingFee",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
     "name": "stake",
     "inputs": [
       {
@@ -670,6 +683,19 @@
   {
     "type": "function",
     "name": "unbondingDuration",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "unbondingFee",
     "inputs": [],
     "outputs": [
       {
@@ -850,6 +876,31 @@
   },
   {
     "type": "event",
+    "name": "GovRedeemFee",
+    "inputs": [
+      {
+        "name": "pool",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "stablecoin",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "amount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
     "name": "Initialized",
     "inputs": [
       {
@@ -979,6 +1030,12 @@
       },
       {
         "name": "lsdTokenAmount",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      },
+      {
+        "name": "fee",
         "type": "uint256",
         "indexed": false,
         "internalType": "uint256"
@@ -1154,6 +1211,11 @@
   {
     "type": "error",
     "name": "InvalidRate",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "LengthNotMatch",
     "inputs": []
   },
   {

@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"time"
 
-	stake_manager "ulst-relay/bindings/StakeManager"
+	"ulst-relay/bindings/stake_manager"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
@@ -15,11 +15,11 @@ import (
 )
 
 func (t *Task) handleNewEra(stakeManagerAddress common.Address) error {
-	stakeManger, err := stake_manager.NewStakeManager(stakeManagerAddress, t.ethClient.Client())
+	stakeManager, err := stake_manager.NewStakeManager(stakeManagerAddress, t.ethClient.Client())
 	if err != nil {
 		return err
 	}
-	bondedPools, err := stakeManger.GetBondedPools(&bind.CallOpts{
+	bondedPools, err := stakeManager.GetBondedPools(&bind.CallOpts{
 		Context: context.Background(),
 	})
 	if err != nil {
@@ -35,11 +35,11 @@ func (t *Task) handleNewEra(stakeManagerAddress common.Address) error {
 		Context: context.Background(),
 	}
 
-	currentEra, err := stakeManger.CurrentEraUint64(&latestCallOpts)
+	currentEra, err := stakeManager.CurrentEraUint64(&latestCallOpts)
 	if err != nil {
 		return err
 	}
-	latestEra, err := stakeManger.LatestEraUint64(&latestCallOpts)
+	latestEra, err := stakeManager.LatestEraUint64(&latestCallOpts)
 	if err != nil {
 		return err
 	}
@@ -49,7 +49,7 @@ func (t *Task) handleNewEra(stakeManagerAddress common.Address) error {
 		return nil
 	}
 
-	err = t.invokeNewEra(stakeManger, currentEra, latestEra, &latestCallOpts, bondedPools)
+	err = t.invokeNewEra(stakeManager, currentEra, latestEra, &latestCallOpts, bondedPools)
 	if err != nil {
 		return err
 	}

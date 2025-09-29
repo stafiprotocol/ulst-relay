@@ -21,7 +21,8 @@ build-linux:
 
 abi:
 	@echo " > \033[32mGenabi...\033[0m "
-	abigen --abi ./bindings/StakeManager/StakeManager_abi.json --pkg stake_manager --type StakeManager --out ./bindings/StakeManager/StakeManager.go
+	abigen --abi ./bindings/stake_manager/StakeManager_abi.json --pkg stake_manager --type StakeManager --out ./bindings/stake_manager/StakeManager.go
+	abigen --abi ./bindings/stake_pool/StakePool_abi.json --pkg stake_pool --type StakePool --out ./bindings/stake_pool/StakePool.go
 
 clean:
 	@echo " > \033[32mCleaning build files ...\033[0m "
