@@ -602,10 +602,10 @@
   },
   {
     "type": "function",
-    "name": "setUnbondingFee",
+    "name": "setUnstakeFee",
     "inputs": [
       {
-        "name": "_unbondingFee",
+        "name": "_unstakeFee",
         "type": "uint256",
         "internalType": "uint256"
       }
@@ -695,19 +695,6 @@
   },
   {
     "type": "function",
-    "name": "unbondingFee",
-    "inputs": [],
-    "outputs": [
-      {
-        "name": "",
-        "type": "uint256",
-        "internalType": "uint256"
-      }
-    ],
-    "stateMutability": "view"
-  },
-  {
-    "type": "function",
     "name": "unstake",
     "inputs": [
       {
@@ -762,6 +749,19 @@
       },
       {
         "name": "targetFullfilledAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "unstakeFee",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
         "type": "uint256",
         "internalType": "uint256"
       }
