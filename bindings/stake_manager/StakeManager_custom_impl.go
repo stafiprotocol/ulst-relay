@@ -25,22 +25,16 @@ func (_StakeManager *StakeManagerCaller) LatestEraUint64(opts *bind.CallOpts) (u
 }
 
 type PoolInfo struct {
-	Pool                         common.Address
-	Era                          *big.Int
-	Active                       *big.Int
-	Bond                         map[common.Address]*big.Int
-	Unbond                       map[common.Address]*big.Int
-	FullfilledWithdrawalAmountOf map[common.Address]*big.Int
-	Stablecoins                  []common.Address
+	Pool        common.Address
+	Era         *big.Int
+	Active      *big.Int
+	Stablecoins []common.Address
 }
 
 func (p *PoolInfo) String() string {
 	str := fmt.Sprintf("pool: %s\nera: %s\nactive: %s", p.Pool, p.Era, p.Active)
 	for _, stablecoin := range p.Stablecoins {
 		str += fmt.Sprintf("\n  stablecoin: %s", stablecoin)
-		str += fmt.Sprintf("\n    bond: %s", p.Bond[stablecoin])
-		str += fmt.Sprintf("\n    unbond: %s", p.Unbond[stablecoin])
-		str += fmt.Sprintf("\n    fullfilledWithdrawalAmount: %s", p.FullfilledWithdrawalAmountOf[stablecoin])
 	}
 	return str
 }
@@ -56,24 +50,10 @@ func (_StakeManager *StakeManagerCaller) GetPoolInfoOf(opts *bind.CallOpts, pool
 	}
 
 	poolInfo := PoolInfo{
-		Pool:                         pool,
-		Era:                          _poolInfo.Era,
-		Active:                       _poolInfo.Active,
-		Bond:                         make(map[common.Address]*big.Int),
-		Unbond:                       make(map[common.Address]*big.Int),
-		FullfilledWithdrawalAmountOf: make(map[common.Address]*big.Int),
-		Stablecoins:                  stablecoins,
-	}
-
-	for _, stablecoin := range stablecoins {
-		stablecoinInfo, err := _StakeManager.GetPoolInfoByStablecoin(opts, pool, stablecoin)
-		if err != nil {
-			return nil, err
-		}
-
-		poolInfo.Bond[stablecoin] = stablecoinInfo.Bond
-		poolInfo.Unbond[stablecoin] = stablecoinInfo.Unbond
-		poolInfo.FullfilledWithdrawalAmountOf[stablecoin] = stablecoinInfo.FullfilledWithdrawalAmount
+		Pool:        pool,
+		Era:         _poolInfo.Era,
+		Active:      _poolInfo.Active,
+		Stablecoins: stablecoins,
 	}
 
 	return &poolInfo, nil

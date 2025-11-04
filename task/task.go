@@ -1,7 +1,6 @@
 package task
 
 import (
-	"context"
 	"fmt"
 	"math/big"
 	"time"
@@ -69,7 +68,6 @@ func (task *Task) Start() error {
 	task.ethClient = ethClient
 
 	utils.SafeGoWithRestart(task.newEraHandler)
-	utils.SafeGoWithRestart(task.newPayUnbondingFeeHandler)
 
 	return nil
 }
@@ -99,31 +97,6 @@ func (task *Task) newEraHandler() {
 			}
 
 			logrus.Debug("newEraHandler end -----------")
-		}
-	}
-}
-
-func (task *Task) newPayUnbondingFeeHandler() {
-	logrus.Info("start new pay unbonding fee Handler")
-	ticker := time.NewTicker(time.Duration(task.taskTicker) * time.Second)
-	defer ticker.Stop()
-
-	for {
-
-		select {
-		case <-task.stop:
-			logrus.Info("task has stopped")
-			return
-		case <-ticker.C:
-			logrus.Debug("newPayUnbondingFeeHandler start -----------")
-
-			err := task.handlePayUnbondingFee(context.Background(), task.stakeMangerAddress)
-			if err != nil {
-				logrus.Warnf("newPayUnbondingFeeHandler failed, err: %s", err.Error())
-				continue
-			}
-
-			logrus.Debug("newPayUnbondingFeeHandler end -----------")
 		}
 	}
 }

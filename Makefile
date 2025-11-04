@@ -16,6 +16,9 @@ build:
 	@echo " > \033[32mBuilding ulst-relay...\033[0m "
 	go build -mod readonly $(BUILD_FLAGS) -o build/ulst-relay main.go
 
+install: build
+	sudo mv build/ulst-relay /usr/local/bin/
+
 build-linux:
 	@GOOS=linux GOARCH=amd64 go build --mod readonly $(BUILD_FLAGS) -o ./build/ulst-relay main.go
 

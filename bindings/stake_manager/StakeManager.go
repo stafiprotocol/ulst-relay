@@ -31,7 +31,7 @@ var (
 
 // StakeManagerMetaData contains all meta data concerning the StakeManager contract.
 var StakeManagerMetaData = &bind.MetaData{
-	ABI: "[{\"type\":\"constructor\",\"inputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"DEFAULT_ERA_SECONDS\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_ERA_SECONDS\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_PROTOCOL_FEE_COMMISSION\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_RATE_CHANGE_LIMIT\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_UNBONDING_DURATION\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_VALIDATORS_LEN\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MIN_ERA_SECONDS\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"UNSTAKE_TIMES_LIMIT\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"UPGRADE_INTERFACE_VERSION\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"string\",\"internalType\":\"string\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"addStablecoin\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"addStakePool\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"currentEra\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"eraOffset\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"eraRate\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"eraSeconds\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"factoryAddress\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"factoryFeeCommission\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getBondedPools\",\"inputs\":[],\"outputs\":[{\"name\":\"pools\",\"type\":\"address[]\",\"internalType\":\"address[]\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getPoolInfoByStablecoin\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"fullfilledWithdrawalAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"bond\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"unbond\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getRate\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getStablecoins\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address[]\",\"internalType\":\"address[]\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getUnstakeIndexListOf\",\"inputs\":[{\"name\":\"_staker\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"unstakeIndexList\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"initialize\",\"inputs\":[{\"name\":\"_lsdToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_owner\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoins\",\"type\":\"address[]\",\"internalType\":\"address[]\"},{\"name\":\"_factoryAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"latestEra\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"lsdToken\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"minStakeAmount\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"newEra\",\"inputs\":[],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"nextUnstakeIndex\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"owner\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"poolInfoOf\",\"inputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"era\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"active\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"protocolFeeCommission\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"proxiableUUID\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rate\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rateChangeLimit\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rmStablecoin\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setEraParams\",\"inputs\":[{\"name\":\"_eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_eraOffset\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setFactoryFeeCommission\",\"inputs\":[{\"name\":\"_factoryFeeCommission\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setMinStakeAmount\",\"inputs\":[{\"name\":\"_minStakeAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setProtocolFeeCommission\",\"inputs\":[{\"name\":\"_protocolFeeCommission\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setRateChangeLimit\",\"inputs\":[{\"name\":\"_rateChangeLimit\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setUnbondingDuration\",\"inputs\":[{\"name\":\"_unbondingDuration\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setUnstakeFee\",\"inputs\":[{\"name\":\"_unstakeFee\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"stake\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stakeAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"stakeWithPool\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stakeAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"totalProtocolFee\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"transferOwnership\",\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"unbondingDuration\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"unstake\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_lsdTokenAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"unstakeAtIndex\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"era\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"pool\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"receiver\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"targetFullfilledAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"unstakeFee\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"unstakeWithPool\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_lsdTokenAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"upgradeToAndCall\",\"inputs\":[{\"name\":\"newImplementation\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"data\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[],\"stateMutability\":\"payable\"},{\"type\":\"function\",\"name\":\"version\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint64\",\"internalType\":\"uint64\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"withdraw\",\"inputs\":[],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"withdrawProtocolFee\",\"inputs\":[{\"name\":\"_to\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"withdrawWithPool\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"event\",\"name\":\"ExecuteNewEra\",\"inputs\":[{\"name\":\"era\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"rate\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"GovRedeemFee\",\"inputs\":[{\"name\":\"pool\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Initialized\",\"inputs\":[{\"name\":\"version\",\"type\":\"uint64\",\"indexed\":false,\"internalType\":\"uint64\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"NewReward\",\"inputs\":[{\"name\":\"poolAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"newReward\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"inputs\":[{\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"SetUnbondingDuration\",\"inputs\":[{\"name\":\"unbondingDuration\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Stake\",\"inputs\":[{\"name\":\"staker\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"poolAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"tokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"lsdTokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Unstake\",\"inputs\":[{\"name\":\"staker\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"poolAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"tokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"lsdTokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"fee\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"unstakeIndex\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Upgraded\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Withdraw\",\"inputs\":[{\"name\":\"staker\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"poolAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"unstakeIndexList\",\"type\":\"int256[]\",\"indexed\":false,\"internalType\":\"int256[]\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AddressEmptyCode\",\"inputs\":[{\"name\":\"target\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"AddressNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AlreadyInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AlreadyWithdrawed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CallerNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CommissionRateInvalid\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"DelegateNotEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ERC1967InvalidImplementation\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"ERC1967NonPayable\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"EraNotMatch\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedToCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"GreaterThanMaxEraSeconds\",\"inputs\":[{\"name\":\"eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"GreaterThanMaxProtocolFeeCommission\",\"inputs\":[{\"name\":\"protocolFeeCommission\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"GreaterThanMaxRateChangeLimit\",\"inputs\":[{\"name\":\"rateChangeLimit\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"GreaterThanMaxUnbondingDuration\",\"inputs\":[{\"name\":\"unbondingDuration\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"InvalidInitialization\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"InvalidRate\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"LengthNotMatch\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"LessThanMinEraSeconds\",\"inputs\":[{\"name\":\"eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"NotAuthorizedLsdToken\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotEnoughAmountToUndelegate\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotEnoughStakeAmount\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitializing\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"PoolExist\",\"inputs\":[{\"name\":\"poolAddress\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"PoolNotEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"PoolNotExist\",\"inputs\":[{\"name\":\"poolAddress\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"RateChangeExceedLimit\",\"inputs\":[{\"name\":\"oldRate\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"newRate\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"SafeERC20FailedOperation\",\"inputs\":[{\"name\":\"token\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"StablecoinDuplicated\",\"inputs\":[{\"name\":\"stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"StablecoinNotExist\",\"inputs\":[{\"name\":\"stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"UUPSUnauthorizedCallContext\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"UUPSUnsupportedProxiableUUID\",\"inputs\":[{\"name\":\"slot\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]},{\"type\":\"error\",\"name\":\"UnstakeTimesExceedLimit\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorDuplicated\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorNotExist\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorsEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorsLenExceedLimit\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"WrongEraParameters\",\"inputs\":[{\"name\":\"eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"eraOffset\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"ZeroRedelegateAmount\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ZeroUnbondingDuration\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ZeroUnstakeAmount\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ZeroWithdrawAmount\",\"inputs\":[]}]",
+	ABI: "[{\"type\":\"constructor\",\"inputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"DEFAULT_ERA_SECONDS\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_ERA_SECONDS\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_PROTOCOL_FEE_COMMISSION\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_RATE_CHANGE_LIMIT\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MAX_VALIDATORS_LEN\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"MIN_ERA_SECONDS\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"UPGRADE_INTERFACE_VERSION\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"string\",\"internalType\":\"string\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"addStablecoin\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"addStakePool\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"currentEra\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"eraOffset\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"eraRate\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"eraSeconds\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"factoryAddress\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"factoryFeeCommission\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getBondedPools\",\"inputs\":[],\"outputs\":[{\"name\":\"pools\",\"type\":\"address[]\",\"internalType\":\"address[]\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getPoolInfoByStablecoin\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"bond\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getRate\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getStablecoins\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address[]\",\"internalType\":\"address[]\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"initialize\",\"inputs\":[{\"name\":\"_lsdToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_owner\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoins\",\"type\":\"address[]\",\"internalType\":\"address[]\"},{\"name\":\"_factoryAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"isUnstakePaused\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"latestEra\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"lsdToken\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"minStakeAmount\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"newEra\",\"inputs\":[],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"owner\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"poolInfoOf\",\"inputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"era\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"active\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"protocolFeeCommission\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"proxiableUUID\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rate\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rateChangeLimit\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rmStablecoin\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setEraParams\",\"inputs\":[{\"name\":\"_eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_eraOffset\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setFactoryFeeCommission\",\"inputs\":[{\"name\":\"_factoryFeeCommission\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setIsUnstakePaused\",\"inputs\":[{\"name\":\"_isUnstakePaused\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setMinStakeAmount\",\"inputs\":[{\"name\":\"_minStakeAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setProtocolFeeCommission\",\"inputs\":[{\"name\":\"_protocolFeeCommission\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setRateChangeLimit\",\"inputs\":[{\"name\":\"_rateChangeLimit\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"stake\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stakeAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"stakeWithPool\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stakeAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"totalProtocolFee\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"transferOwnership\",\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"unstake\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_lsdTokenAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"unstakeWithPool\",\"inputs\":[{\"name\":\"_poolAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_lsdTokenAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"upgradeToAndCall\",\"inputs\":[{\"name\":\"newImplementation\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"data\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[],\"stateMutability\":\"payable\"},{\"type\":\"function\",\"name\":\"version\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint64\",\"internalType\":\"uint64\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"withdrawProtocolFee\",\"inputs\":[{\"name\":\"_to\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"event\",\"name\":\"ExecuteNewEra\",\"inputs\":[{\"name\":\"era\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"rate\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"GovRedeemFee\",\"inputs\":[{\"name\":\"pool\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Initialized\",\"inputs\":[{\"name\":\"version\",\"type\":\"uint64\",\"indexed\":false,\"internalType\":\"uint64\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"NewReward\",\"inputs\":[{\"name\":\"poolAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"newReward\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"inputs\":[{\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Stake\",\"inputs\":[{\"name\":\"staker\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"poolAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"tokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"lsdTokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Unstake\",\"inputs\":[{\"name\":\"staker\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"poolAddress\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"tokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"lsdTokenAmount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"UnstakePaused\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"UnstakeUnpaused\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Upgraded\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AddressEmptyCode\",\"inputs\":[{\"name\":\"target\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"AddressNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AlreadyInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AlreadyWithdrawed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CallerNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CommissionRateInvalid\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"DelegateNotEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ERC1967InvalidImplementation\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"ERC1967NonPayable\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"EraNotMatch\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedToCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"GreaterThanMaxEraSeconds\",\"inputs\":[{\"name\":\"eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"GreaterThanMaxProtocolFeeCommission\",\"inputs\":[{\"name\":\"protocolFeeCommission\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"GreaterThanMaxRateChangeLimit\",\"inputs\":[{\"name\":\"rateChangeLimit\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"InvalidInitialization\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"InvalidRate\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"LengthNotMatch\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"LessThanMinEraSeconds\",\"inputs\":[{\"name\":\"eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"NotAuthorizedLsdToken\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotEnoughAmountToUndelegate\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotEnoughStakeAmount\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitializing\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"PoolExist\",\"inputs\":[{\"name\":\"poolAddress\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"PoolNotEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"PoolNotExist\",\"inputs\":[{\"name\":\"poolAddress\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"RateChangeExceedLimit\",\"inputs\":[{\"name\":\"oldRate\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"newRate\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"SafeERC20FailedOperation\",\"inputs\":[{\"name\":\"token\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"StablecoinDuplicated\",\"inputs\":[{\"name\":\"stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"StablecoinNotExist\",\"inputs\":[{\"name\":\"stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"UUPSUnauthorizedCallContext\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"UUPSUnsupportedProxiableUUID\",\"inputs\":[{\"name\":\"slot\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]},{\"type\":\"error\",\"name\":\"UnbondingFailed\",\"inputs\":[{\"name\":\"needUndelegate\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"UnstakePausedError\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorDuplicated\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorNotExist\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorsEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorsLenExceedLimit\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"WrongEraParameters\",\"inputs\":[{\"name\":\"eraSeconds\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"eraOffset\",\"type\":\"uint256\",\"internalType\":\"uint256\"}]},{\"type\":\"error\",\"name\":\"ZeroRedelegateAmount\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ZeroUnstakeAmount\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ZeroWithdrawAmount\",\"inputs\":[]}]",
 }
 
 // StakeManagerABI is the input ABI used to generate the binding from.
@@ -304,37 +304,6 @@ func (_StakeManager *StakeManagerCallerSession) MAXRATECHANGELIMIT() (*big.Int, 
 	return _StakeManager.Contract.MAXRATECHANGELIMIT(&_StakeManager.CallOpts)
 }
 
-// MAXUNBONDINGDURATION is a free data retrieval call binding the contract method 0x9a4dac92.
-//
-// Solidity: function MAX_UNBONDING_DURATION() view returns(uint256)
-func (_StakeManager *StakeManagerCaller) MAXUNBONDINGDURATION(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _StakeManager.contract.Call(opts, &out, "MAX_UNBONDING_DURATION")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// MAXUNBONDINGDURATION is a free data retrieval call binding the contract method 0x9a4dac92.
-//
-// Solidity: function MAX_UNBONDING_DURATION() view returns(uint256)
-func (_StakeManager *StakeManagerSession) MAXUNBONDINGDURATION() (*big.Int, error) {
-	return _StakeManager.Contract.MAXUNBONDINGDURATION(&_StakeManager.CallOpts)
-}
-
-// MAXUNBONDINGDURATION is a free data retrieval call binding the contract method 0x9a4dac92.
-//
-// Solidity: function MAX_UNBONDING_DURATION() view returns(uint256)
-func (_StakeManager *StakeManagerCallerSession) MAXUNBONDINGDURATION() (*big.Int, error) {
-	return _StakeManager.Contract.MAXUNBONDINGDURATION(&_StakeManager.CallOpts)
-}
-
 // MAXVALIDATORSLEN is a free data retrieval call binding the contract method 0x0ea6f80a.
 //
 // Solidity: function MAX_VALIDATORS_LEN() view returns(uint256)
@@ -395,37 +364,6 @@ func (_StakeManager *StakeManagerSession) MINERASECONDS() (*big.Int, error) {
 // Solidity: function MIN_ERA_SECONDS() view returns(uint256)
 func (_StakeManager *StakeManagerCallerSession) MINERASECONDS() (*big.Int, error) {
 	return _StakeManager.Contract.MINERASECONDS(&_StakeManager.CallOpts)
-}
-
-// UNSTAKETIMESLIMIT is a free data retrieval call binding the contract method 0xe34719d9.
-//
-// Solidity: function UNSTAKE_TIMES_LIMIT() view returns(uint256)
-func (_StakeManager *StakeManagerCaller) UNSTAKETIMESLIMIT(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _StakeManager.contract.Call(opts, &out, "UNSTAKE_TIMES_LIMIT")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// UNSTAKETIMESLIMIT is a free data retrieval call binding the contract method 0xe34719d9.
-//
-// Solidity: function UNSTAKE_TIMES_LIMIT() view returns(uint256)
-func (_StakeManager *StakeManagerSession) UNSTAKETIMESLIMIT() (*big.Int, error) {
-	return _StakeManager.Contract.UNSTAKETIMESLIMIT(&_StakeManager.CallOpts)
-}
-
-// UNSTAKETIMESLIMIT is a free data retrieval call binding the contract method 0xe34719d9.
-//
-// Solidity: function UNSTAKE_TIMES_LIMIT() view returns(uint256)
-func (_StakeManager *StakeManagerCallerSession) UNSTAKETIMESLIMIT() (*big.Int, error) {
-	return _StakeManager.Contract.UNSTAKETIMESLIMIT(&_StakeManager.CallOpts)
 }
 
 // UPGRADEINTERFACEVERSION is a free data retrieval call binding the contract method 0xad3cb1cc.
@@ -678,51 +616,32 @@ func (_StakeManager *StakeManagerCallerSession) GetBondedPools() ([]common.Addre
 
 // GetPoolInfoByStablecoin is a free data retrieval call binding the contract method 0x57e6fa61.
 //
-// Solidity: function getPoolInfoByStablecoin(address _poolAddress, address _stablecoin) view returns(uint256 fullfilledWithdrawalAmount, uint256 bond, uint256 unbond)
-func (_StakeManager *StakeManagerCaller) GetPoolInfoByStablecoin(opts *bind.CallOpts, _poolAddress common.Address, _stablecoin common.Address) (struct {
-	FullfilledWithdrawalAmount *big.Int
-	Bond                       *big.Int
-	Unbond                     *big.Int
-}, error) {
+// Solidity: function getPoolInfoByStablecoin(address _poolAddress, address _stablecoin) view returns(uint256 bond)
+func (_StakeManager *StakeManagerCaller) GetPoolInfoByStablecoin(opts *bind.CallOpts, _poolAddress common.Address, _stablecoin common.Address) (*big.Int, error) {
 	var out []interface{}
 	err := _StakeManager.contract.Call(opts, &out, "getPoolInfoByStablecoin", _poolAddress, _stablecoin)
 
-	outstruct := new(struct {
-		FullfilledWithdrawalAmount *big.Int
-		Bond                       *big.Int
-		Unbond                     *big.Int
-	})
 	if err != nil {
-		return *outstruct, err
+		return *new(*big.Int), err
 	}
 
-	outstruct.FullfilledWithdrawalAmount = *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-	outstruct.Bond = *abi.ConvertType(out[1], new(*big.Int)).(**big.Int)
-	outstruct.Unbond = *abi.ConvertType(out[2], new(*big.Int)).(**big.Int)
+	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
 
-	return *outstruct, err
+	return out0, err
 
 }
 
 // GetPoolInfoByStablecoin is a free data retrieval call binding the contract method 0x57e6fa61.
 //
-// Solidity: function getPoolInfoByStablecoin(address _poolAddress, address _stablecoin) view returns(uint256 fullfilledWithdrawalAmount, uint256 bond, uint256 unbond)
-func (_StakeManager *StakeManagerSession) GetPoolInfoByStablecoin(_poolAddress common.Address, _stablecoin common.Address) (struct {
-	FullfilledWithdrawalAmount *big.Int
-	Bond                       *big.Int
-	Unbond                     *big.Int
-}, error) {
+// Solidity: function getPoolInfoByStablecoin(address _poolAddress, address _stablecoin) view returns(uint256 bond)
+func (_StakeManager *StakeManagerSession) GetPoolInfoByStablecoin(_poolAddress common.Address, _stablecoin common.Address) (*big.Int, error) {
 	return _StakeManager.Contract.GetPoolInfoByStablecoin(&_StakeManager.CallOpts, _poolAddress, _stablecoin)
 }
 
 // GetPoolInfoByStablecoin is a free data retrieval call binding the contract method 0x57e6fa61.
 //
-// Solidity: function getPoolInfoByStablecoin(address _poolAddress, address _stablecoin) view returns(uint256 fullfilledWithdrawalAmount, uint256 bond, uint256 unbond)
-func (_StakeManager *StakeManagerCallerSession) GetPoolInfoByStablecoin(_poolAddress common.Address, _stablecoin common.Address) (struct {
-	FullfilledWithdrawalAmount *big.Int
-	Bond                       *big.Int
-	Unbond                     *big.Int
-}, error) {
+// Solidity: function getPoolInfoByStablecoin(address _poolAddress, address _stablecoin) view returns(uint256 bond)
+func (_StakeManager *StakeManagerCallerSession) GetPoolInfoByStablecoin(_poolAddress common.Address, _stablecoin common.Address) (*big.Int, error) {
 	return _StakeManager.Contract.GetPoolInfoByStablecoin(&_StakeManager.CallOpts, _poolAddress, _stablecoin)
 }
 
@@ -788,35 +707,35 @@ func (_StakeManager *StakeManagerCallerSession) GetStablecoins() ([]common.Addre
 	return _StakeManager.Contract.GetStablecoins(&_StakeManager.CallOpts)
 }
 
-// GetUnstakeIndexListOf is a free data retrieval call binding the contract method 0x615acc36.
+// IsUnstakePaused is a free data retrieval call binding the contract method 0xdb1f7234.
 //
-// Solidity: function getUnstakeIndexListOf(address _staker) view returns(uint256[] unstakeIndexList)
-func (_StakeManager *StakeManagerCaller) GetUnstakeIndexListOf(opts *bind.CallOpts, _staker common.Address) ([]*big.Int, error) {
+// Solidity: function isUnstakePaused() view returns(bool)
+func (_StakeManager *StakeManagerCaller) IsUnstakePaused(opts *bind.CallOpts) (bool, error) {
 	var out []interface{}
-	err := _StakeManager.contract.Call(opts, &out, "getUnstakeIndexListOf", _staker)
+	err := _StakeManager.contract.Call(opts, &out, "isUnstakePaused")
 
 	if err != nil {
-		return *new([]*big.Int), err
+		return *new(bool), err
 	}
 
-	out0 := *abi.ConvertType(out[0], new([]*big.Int)).(*[]*big.Int)
+	out0 := *abi.ConvertType(out[0], new(bool)).(*bool)
 
 	return out0, err
 
 }
 
-// GetUnstakeIndexListOf is a free data retrieval call binding the contract method 0x615acc36.
+// IsUnstakePaused is a free data retrieval call binding the contract method 0xdb1f7234.
 //
-// Solidity: function getUnstakeIndexListOf(address _staker) view returns(uint256[] unstakeIndexList)
-func (_StakeManager *StakeManagerSession) GetUnstakeIndexListOf(_staker common.Address) ([]*big.Int, error) {
-	return _StakeManager.Contract.GetUnstakeIndexListOf(&_StakeManager.CallOpts, _staker)
+// Solidity: function isUnstakePaused() view returns(bool)
+func (_StakeManager *StakeManagerSession) IsUnstakePaused() (bool, error) {
+	return _StakeManager.Contract.IsUnstakePaused(&_StakeManager.CallOpts)
 }
 
-// GetUnstakeIndexListOf is a free data retrieval call binding the contract method 0x615acc36.
+// IsUnstakePaused is a free data retrieval call binding the contract method 0xdb1f7234.
 //
-// Solidity: function getUnstakeIndexListOf(address _staker) view returns(uint256[] unstakeIndexList)
-func (_StakeManager *StakeManagerCallerSession) GetUnstakeIndexListOf(_staker common.Address) ([]*big.Int, error) {
-	return _StakeManager.Contract.GetUnstakeIndexListOf(&_StakeManager.CallOpts, _staker)
+// Solidity: function isUnstakePaused() view returns(bool)
+func (_StakeManager *StakeManagerCallerSession) IsUnstakePaused() (bool, error) {
+	return _StakeManager.Contract.IsUnstakePaused(&_StakeManager.CallOpts)
 }
 
 // LatestEra is a free data retrieval call binding the contract method 0x3f6f5f32.
@@ -910,37 +829,6 @@ func (_StakeManager *StakeManagerSession) MinStakeAmount() (*big.Int, error) {
 // Solidity: function minStakeAmount() view returns(uint256)
 func (_StakeManager *StakeManagerCallerSession) MinStakeAmount() (*big.Int, error) {
 	return _StakeManager.Contract.MinStakeAmount(&_StakeManager.CallOpts)
-}
-
-// NextUnstakeIndex is a free data retrieval call binding the contract method 0x3bea9ee3.
-//
-// Solidity: function nextUnstakeIndex() view returns(uint256)
-func (_StakeManager *StakeManagerCaller) NextUnstakeIndex(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _StakeManager.contract.Call(opts, &out, "nextUnstakeIndex")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// NextUnstakeIndex is a free data retrieval call binding the contract method 0x3bea9ee3.
-//
-// Solidity: function nextUnstakeIndex() view returns(uint256)
-func (_StakeManager *StakeManagerSession) NextUnstakeIndex() (*big.Int, error) {
-	return _StakeManager.Contract.NextUnstakeIndex(&_StakeManager.CallOpts)
-}
-
-// NextUnstakeIndex is a free data retrieval call binding the contract method 0x3bea9ee3.
-//
-// Solidity: function nextUnstakeIndex() view returns(uint256)
-func (_StakeManager *StakeManagerCallerSession) NextUnstakeIndex() (*big.Int, error) {
-	return _StakeManager.Contract.NextUnstakeIndex(&_StakeManager.CallOpts)
 }
 
 // Owner is a free data retrieval call binding the contract method 0x8da5cb5b.
@@ -1174,133 +1062,6 @@ func (_StakeManager *StakeManagerCallerSession) TotalProtocolFee() (*big.Int, er
 	return _StakeManager.Contract.TotalProtocolFee(&_StakeManager.CallOpts)
 }
 
-// UnbondingDuration is a free data retrieval call binding the contract method 0xccf6802a.
-//
-// Solidity: function unbondingDuration() view returns(uint256)
-func (_StakeManager *StakeManagerCaller) UnbondingDuration(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _StakeManager.contract.Call(opts, &out, "unbondingDuration")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// UnbondingDuration is a free data retrieval call binding the contract method 0xccf6802a.
-//
-// Solidity: function unbondingDuration() view returns(uint256)
-func (_StakeManager *StakeManagerSession) UnbondingDuration() (*big.Int, error) {
-	return _StakeManager.Contract.UnbondingDuration(&_StakeManager.CallOpts)
-}
-
-// UnbondingDuration is a free data retrieval call binding the contract method 0xccf6802a.
-//
-// Solidity: function unbondingDuration() view returns(uint256)
-func (_StakeManager *StakeManagerCallerSession) UnbondingDuration() (*big.Int, error) {
-	return _StakeManager.Contract.UnbondingDuration(&_StakeManager.CallOpts)
-}
-
-// UnstakeAtIndex is a free data retrieval call binding the contract method 0x6e436c6e.
-//
-// Solidity: function unstakeAtIndex(uint256 ) view returns(uint256 era, address pool, address stablecoin, address receiver, uint256 amount, uint256 targetFullfilledAmount)
-func (_StakeManager *StakeManagerCaller) UnstakeAtIndex(opts *bind.CallOpts, arg0 *big.Int) (struct {
-	Era                    *big.Int
-	Pool                   common.Address
-	Stablecoin             common.Address
-	Receiver               common.Address
-	Amount                 *big.Int
-	TargetFullfilledAmount *big.Int
-}, error) {
-	var out []interface{}
-	err := _StakeManager.contract.Call(opts, &out, "unstakeAtIndex", arg0)
-
-	outstruct := new(struct {
-		Era                    *big.Int
-		Pool                   common.Address
-		Stablecoin             common.Address
-		Receiver               common.Address
-		Amount                 *big.Int
-		TargetFullfilledAmount *big.Int
-	})
-	if err != nil {
-		return *outstruct, err
-	}
-
-	outstruct.Era = *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-	outstruct.Pool = *abi.ConvertType(out[1], new(common.Address)).(*common.Address)
-	outstruct.Stablecoin = *abi.ConvertType(out[2], new(common.Address)).(*common.Address)
-	outstruct.Receiver = *abi.ConvertType(out[3], new(common.Address)).(*common.Address)
-	outstruct.Amount = *abi.ConvertType(out[4], new(*big.Int)).(**big.Int)
-	outstruct.TargetFullfilledAmount = *abi.ConvertType(out[5], new(*big.Int)).(**big.Int)
-
-	return *outstruct, err
-
-}
-
-// UnstakeAtIndex is a free data retrieval call binding the contract method 0x6e436c6e.
-//
-// Solidity: function unstakeAtIndex(uint256 ) view returns(uint256 era, address pool, address stablecoin, address receiver, uint256 amount, uint256 targetFullfilledAmount)
-func (_StakeManager *StakeManagerSession) UnstakeAtIndex(arg0 *big.Int) (struct {
-	Era                    *big.Int
-	Pool                   common.Address
-	Stablecoin             common.Address
-	Receiver               common.Address
-	Amount                 *big.Int
-	TargetFullfilledAmount *big.Int
-}, error) {
-	return _StakeManager.Contract.UnstakeAtIndex(&_StakeManager.CallOpts, arg0)
-}
-
-// UnstakeAtIndex is a free data retrieval call binding the contract method 0x6e436c6e.
-//
-// Solidity: function unstakeAtIndex(uint256 ) view returns(uint256 era, address pool, address stablecoin, address receiver, uint256 amount, uint256 targetFullfilledAmount)
-func (_StakeManager *StakeManagerCallerSession) UnstakeAtIndex(arg0 *big.Int) (struct {
-	Era                    *big.Int
-	Pool                   common.Address
-	Stablecoin             common.Address
-	Receiver               common.Address
-	Amount                 *big.Int
-	TargetFullfilledAmount *big.Int
-}, error) {
-	return _StakeManager.Contract.UnstakeAtIndex(&_StakeManager.CallOpts, arg0)
-}
-
-// UnstakeFee is a free data retrieval call binding the contract method 0x8ea97d26.
-//
-// Solidity: function unstakeFee() view returns(uint256)
-func (_StakeManager *StakeManagerCaller) UnstakeFee(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _StakeManager.contract.Call(opts, &out, "unstakeFee")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// UnstakeFee is a free data retrieval call binding the contract method 0x8ea97d26.
-//
-// Solidity: function unstakeFee() view returns(uint256)
-func (_StakeManager *StakeManagerSession) UnstakeFee() (*big.Int, error) {
-	return _StakeManager.Contract.UnstakeFee(&_StakeManager.CallOpts)
-}
-
-// UnstakeFee is a free data retrieval call binding the contract method 0x8ea97d26.
-//
-// Solidity: function unstakeFee() view returns(uint256)
-func (_StakeManager *StakeManagerCallerSession) UnstakeFee() (*big.Int, error) {
-	return _StakeManager.Contract.UnstakeFee(&_StakeManager.CallOpts)
-}
-
 // Version is a free data retrieval call binding the contract method 0x54fd4d50.
 //
 // Solidity: function version() view returns(uint64)
@@ -1479,6 +1240,27 @@ func (_StakeManager *StakeManagerTransactorSession) SetFactoryFeeCommission(_fac
 	return _StakeManager.Contract.SetFactoryFeeCommission(&_StakeManager.TransactOpts, _factoryFeeCommission)
 }
 
+// SetIsUnstakePaused is a paid mutator transaction binding the contract method 0x49571572.
+//
+// Solidity: function setIsUnstakePaused(bool _isUnstakePaused) returns()
+func (_StakeManager *StakeManagerTransactor) SetIsUnstakePaused(opts *bind.TransactOpts, _isUnstakePaused bool) (*types.Transaction, error) {
+	return _StakeManager.contract.Transact(opts, "setIsUnstakePaused", _isUnstakePaused)
+}
+
+// SetIsUnstakePaused is a paid mutator transaction binding the contract method 0x49571572.
+//
+// Solidity: function setIsUnstakePaused(bool _isUnstakePaused) returns()
+func (_StakeManager *StakeManagerSession) SetIsUnstakePaused(_isUnstakePaused bool) (*types.Transaction, error) {
+	return _StakeManager.Contract.SetIsUnstakePaused(&_StakeManager.TransactOpts, _isUnstakePaused)
+}
+
+// SetIsUnstakePaused is a paid mutator transaction binding the contract method 0x49571572.
+//
+// Solidity: function setIsUnstakePaused(bool _isUnstakePaused) returns()
+func (_StakeManager *StakeManagerTransactorSession) SetIsUnstakePaused(_isUnstakePaused bool) (*types.Transaction, error) {
+	return _StakeManager.Contract.SetIsUnstakePaused(&_StakeManager.TransactOpts, _isUnstakePaused)
+}
+
 // SetMinStakeAmount is a paid mutator transaction binding the contract method 0xeb4af045.
 //
 // Solidity: function setMinStakeAmount(uint256 _minStakeAmount) returns()
@@ -1540,48 +1322,6 @@ func (_StakeManager *StakeManagerSession) SetRateChangeLimit(_rateChangeLimit *b
 // Solidity: function setRateChangeLimit(uint256 _rateChangeLimit) returns()
 func (_StakeManager *StakeManagerTransactorSession) SetRateChangeLimit(_rateChangeLimit *big.Int) (*types.Transaction, error) {
 	return _StakeManager.Contract.SetRateChangeLimit(&_StakeManager.TransactOpts, _rateChangeLimit)
-}
-
-// SetUnbondingDuration is a paid mutator transaction binding the contract method 0x40decaad.
-//
-// Solidity: function setUnbondingDuration(uint256 _unbondingDuration) returns()
-func (_StakeManager *StakeManagerTransactor) SetUnbondingDuration(opts *bind.TransactOpts, _unbondingDuration *big.Int) (*types.Transaction, error) {
-	return _StakeManager.contract.Transact(opts, "setUnbondingDuration", _unbondingDuration)
-}
-
-// SetUnbondingDuration is a paid mutator transaction binding the contract method 0x40decaad.
-//
-// Solidity: function setUnbondingDuration(uint256 _unbondingDuration) returns()
-func (_StakeManager *StakeManagerSession) SetUnbondingDuration(_unbondingDuration *big.Int) (*types.Transaction, error) {
-	return _StakeManager.Contract.SetUnbondingDuration(&_StakeManager.TransactOpts, _unbondingDuration)
-}
-
-// SetUnbondingDuration is a paid mutator transaction binding the contract method 0x40decaad.
-//
-// Solidity: function setUnbondingDuration(uint256 _unbondingDuration) returns()
-func (_StakeManager *StakeManagerTransactorSession) SetUnbondingDuration(_unbondingDuration *big.Int) (*types.Transaction, error) {
-	return _StakeManager.Contract.SetUnbondingDuration(&_StakeManager.TransactOpts, _unbondingDuration)
-}
-
-// SetUnstakeFee is a paid mutator transaction binding the contract method 0x0018a116.
-//
-// Solidity: function setUnstakeFee(uint256 _unstakeFee) returns()
-func (_StakeManager *StakeManagerTransactor) SetUnstakeFee(opts *bind.TransactOpts, _unstakeFee *big.Int) (*types.Transaction, error) {
-	return _StakeManager.contract.Transact(opts, "setUnstakeFee", _unstakeFee)
-}
-
-// SetUnstakeFee is a paid mutator transaction binding the contract method 0x0018a116.
-//
-// Solidity: function setUnstakeFee(uint256 _unstakeFee) returns()
-func (_StakeManager *StakeManagerSession) SetUnstakeFee(_unstakeFee *big.Int) (*types.Transaction, error) {
-	return _StakeManager.Contract.SetUnstakeFee(&_StakeManager.TransactOpts, _unstakeFee)
-}
-
-// SetUnstakeFee is a paid mutator transaction binding the contract method 0x0018a116.
-//
-// Solidity: function setUnstakeFee(uint256 _unstakeFee) returns()
-func (_StakeManager *StakeManagerTransactorSession) SetUnstakeFee(_unstakeFee *big.Int) (*types.Transaction, error) {
-	return _StakeManager.Contract.SetUnstakeFee(&_StakeManager.TransactOpts, _unstakeFee)
 }
 
 // Stake is a paid mutator transaction binding the contract method 0xadc9772e.
@@ -1710,27 +1450,6 @@ func (_StakeManager *StakeManagerTransactorSession) UpgradeToAndCall(newImplemen
 	return _StakeManager.Contract.UpgradeToAndCall(&_StakeManager.TransactOpts, newImplementation, data)
 }
 
-// Withdraw is a paid mutator transaction binding the contract method 0x3ccfd60b.
-//
-// Solidity: function withdraw() returns()
-func (_StakeManager *StakeManagerTransactor) Withdraw(opts *bind.TransactOpts) (*types.Transaction, error) {
-	return _StakeManager.contract.Transact(opts, "withdraw")
-}
-
-// Withdraw is a paid mutator transaction binding the contract method 0x3ccfd60b.
-//
-// Solidity: function withdraw() returns()
-func (_StakeManager *StakeManagerSession) Withdraw() (*types.Transaction, error) {
-	return _StakeManager.Contract.Withdraw(&_StakeManager.TransactOpts)
-}
-
-// Withdraw is a paid mutator transaction binding the contract method 0x3ccfd60b.
-//
-// Solidity: function withdraw() returns()
-func (_StakeManager *StakeManagerTransactorSession) Withdraw() (*types.Transaction, error) {
-	return _StakeManager.Contract.Withdraw(&_StakeManager.TransactOpts)
-}
-
 // WithdrawProtocolFee is a paid mutator transaction binding the contract method 0x668fb6dc.
 //
 // Solidity: function withdrawProtocolFee(address _to) returns()
@@ -1750,27 +1469,6 @@ func (_StakeManager *StakeManagerSession) WithdrawProtocolFee(_to common.Address
 // Solidity: function withdrawProtocolFee(address _to) returns()
 func (_StakeManager *StakeManagerTransactorSession) WithdrawProtocolFee(_to common.Address) (*types.Transaction, error) {
 	return _StakeManager.Contract.WithdrawProtocolFee(&_StakeManager.TransactOpts, _to)
-}
-
-// WithdrawWithPool is a paid mutator transaction binding the contract method 0xf737abac.
-//
-// Solidity: function withdrawWithPool(address _poolAddress) returns()
-func (_StakeManager *StakeManagerTransactor) WithdrawWithPool(opts *bind.TransactOpts, _poolAddress common.Address) (*types.Transaction, error) {
-	return _StakeManager.contract.Transact(opts, "withdrawWithPool", _poolAddress)
-}
-
-// WithdrawWithPool is a paid mutator transaction binding the contract method 0xf737abac.
-//
-// Solidity: function withdrawWithPool(address _poolAddress) returns()
-func (_StakeManager *StakeManagerSession) WithdrawWithPool(_poolAddress common.Address) (*types.Transaction, error) {
-	return _StakeManager.Contract.WithdrawWithPool(&_StakeManager.TransactOpts, _poolAddress)
-}
-
-// WithdrawWithPool is a paid mutator transaction binding the contract method 0xf737abac.
-//
-// Solidity: function withdrawWithPool(address _poolAddress) returns()
-func (_StakeManager *StakeManagerTransactorSession) WithdrawWithPool(_poolAddress common.Address) (*types.Transaction, error) {
-	return _StakeManager.Contract.WithdrawWithPool(&_StakeManager.TransactOpts, _poolAddress)
 }
 
 // StakeManagerExecuteNewEraIterator is returned from FilterExecuteNewEra and is used to iterate over the raw logs and unpacked data for ExecuteNewEra events raised by the StakeManager contract.
@@ -2476,140 +2174,6 @@ func (_StakeManager *StakeManagerFilterer) ParseOwnershipTransferred(log types.L
 	return event, nil
 }
 
-// StakeManagerSetUnbondingDurationIterator is returned from FilterSetUnbondingDuration and is used to iterate over the raw logs and unpacked data for SetUnbondingDuration events raised by the StakeManager contract.
-type StakeManagerSetUnbondingDurationIterator struct {
-	Event *StakeManagerSetUnbondingDuration // Event containing the contract specifics and raw log
-
-	contract *bind.BoundContract // Generic contract to use for unpacking event data
-	event    string              // Event name to use for unpacking event data
-
-	logs chan types.Log        // Log channel receiving the found contract events
-	sub  ethereum.Subscription // Subscription for errors, completion and termination
-	done bool                  // Whether the subscription completed delivering logs
-	fail error                 // Occurred error to stop iteration
-}
-
-// Next advances the iterator to the subsequent event, returning whether there
-// are any more events found. In case of a retrieval or parsing error, false is
-// returned and Error() can be queried for the exact failure.
-func (it *StakeManagerSetUnbondingDurationIterator) Next() bool {
-	// If the iterator failed, stop iterating
-	if it.fail != nil {
-		return false
-	}
-	// If the iterator completed, deliver directly whatever's available
-	if it.done {
-		select {
-		case log := <-it.logs:
-			it.Event = new(StakeManagerSetUnbondingDuration)
-			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-				it.fail = err
-				return false
-			}
-			it.Event.Raw = log
-			return true
-
-		default:
-			return false
-		}
-	}
-	// Iterator still in progress, wait for either a data or an error event
-	select {
-	case log := <-it.logs:
-		it.Event = new(StakeManagerSetUnbondingDuration)
-		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-			it.fail = err
-			return false
-		}
-		it.Event.Raw = log
-		return true
-
-	case err := <-it.sub.Err():
-		it.done = true
-		it.fail = err
-		return it.Next()
-	}
-}
-
-// Error returns any retrieval or parsing error occurred during filtering.
-func (it *StakeManagerSetUnbondingDurationIterator) Error() error {
-	return it.fail
-}
-
-// Close terminates the iteration process, releasing any pending underlying
-// resources.
-func (it *StakeManagerSetUnbondingDurationIterator) Close() error {
-	it.sub.Unsubscribe()
-	return nil
-}
-
-// StakeManagerSetUnbondingDuration represents a SetUnbondingDuration event raised by the StakeManager contract.
-type StakeManagerSetUnbondingDuration struct {
-	UnbondingDuration *big.Int
-	Raw               types.Log // Blockchain specific contextual infos
-}
-
-// FilterSetUnbondingDuration is a free log retrieval operation binding the contract event 0x279066b062766bf26597e98ef1d6fb6ec39502061f95f271089f727c875414d0.
-//
-// Solidity: event SetUnbondingDuration(uint256 unbondingDuration)
-func (_StakeManager *StakeManagerFilterer) FilterSetUnbondingDuration(opts *bind.FilterOpts) (*StakeManagerSetUnbondingDurationIterator, error) {
-
-	logs, sub, err := _StakeManager.contract.FilterLogs(opts, "SetUnbondingDuration")
-	if err != nil {
-		return nil, err
-	}
-	return &StakeManagerSetUnbondingDurationIterator{contract: _StakeManager.contract, event: "SetUnbondingDuration", logs: logs, sub: sub}, nil
-}
-
-// WatchSetUnbondingDuration is a free log subscription operation binding the contract event 0x279066b062766bf26597e98ef1d6fb6ec39502061f95f271089f727c875414d0.
-//
-// Solidity: event SetUnbondingDuration(uint256 unbondingDuration)
-func (_StakeManager *StakeManagerFilterer) WatchSetUnbondingDuration(opts *bind.WatchOpts, sink chan<- *StakeManagerSetUnbondingDuration) (event.Subscription, error) {
-
-	logs, sub, err := _StakeManager.contract.WatchLogs(opts, "SetUnbondingDuration")
-	if err != nil {
-		return nil, err
-	}
-	return event.NewSubscription(func(quit <-chan struct{}) error {
-		defer sub.Unsubscribe()
-		for {
-			select {
-			case log := <-logs:
-				// New log arrived, parse the event and forward to the user
-				event := new(StakeManagerSetUnbondingDuration)
-				if err := _StakeManager.contract.UnpackLog(event, "SetUnbondingDuration", log); err != nil {
-					return err
-				}
-				event.Raw = log
-
-				select {
-				case sink <- event:
-				case err := <-sub.Err():
-					return err
-				case <-quit:
-					return nil
-				}
-			case err := <-sub.Err():
-				return err
-			case <-quit:
-				return nil
-			}
-		}
-	}), nil
-}
-
-// ParseSetUnbondingDuration is a log parse operation binding the contract event 0x279066b062766bf26597e98ef1d6fb6ec39502061f95f271089f727c875414d0.
-//
-// Solidity: event SetUnbondingDuration(uint256 unbondingDuration)
-func (_StakeManager *StakeManagerFilterer) ParseSetUnbondingDuration(log types.Log) (*StakeManagerSetUnbondingDuration, error) {
-	event := new(StakeManagerSetUnbondingDuration)
-	if err := _StakeManager.contract.UnpackLog(event, "SetUnbondingDuration", log); err != nil {
-		return nil, err
-	}
-	event.Raw = log
-	return event, nil
-}
-
 // StakeManagerStakeIterator is returned from FilterStake and is used to iterate over the raw logs and unpacked data for Stake events raised by the StakeManager contract.
 type StakeManagerStakeIterator struct {
 	Event *StakeManagerStake // Event containing the contract specifics and raw log
@@ -2822,14 +2386,12 @@ type StakeManagerUnstake struct {
 	Stablecoin     common.Address
 	TokenAmount    *big.Int
 	LsdTokenAmount *big.Int
-	Fee            *big.Int
-	UnstakeIndex   *big.Int
 	Raw            types.Log // Blockchain specific contextual infos
 }
 
-// FilterUnstake is a free log retrieval operation binding the contract event 0x7d0ea2440900409b6b9ca642e7699a8661591a70ca48516f0b9199115d9ad798.
+// FilterUnstake is a free log retrieval operation binding the contract event 0x844b93bba1dfa65e9a88d080df57fa731c72bebc9653aea6be132abde68c27c3.
 //
-// Solidity: event Unstake(address staker, address poolAddress, address stablecoin, uint256 tokenAmount, uint256 lsdTokenAmount, uint256 fee, uint256 unstakeIndex)
+// Solidity: event Unstake(address staker, address poolAddress, address stablecoin, uint256 tokenAmount, uint256 lsdTokenAmount)
 func (_StakeManager *StakeManagerFilterer) FilterUnstake(opts *bind.FilterOpts) (*StakeManagerUnstakeIterator, error) {
 
 	logs, sub, err := _StakeManager.contract.FilterLogs(opts, "Unstake")
@@ -2839,9 +2401,9 @@ func (_StakeManager *StakeManagerFilterer) FilterUnstake(opts *bind.FilterOpts) 
 	return &StakeManagerUnstakeIterator{contract: _StakeManager.contract, event: "Unstake", logs: logs, sub: sub}, nil
 }
 
-// WatchUnstake is a free log subscription operation binding the contract event 0x7d0ea2440900409b6b9ca642e7699a8661591a70ca48516f0b9199115d9ad798.
+// WatchUnstake is a free log subscription operation binding the contract event 0x844b93bba1dfa65e9a88d080df57fa731c72bebc9653aea6be132abde68c27c3.
 //
-// Solidity: event Unstake(address staker, address poolAddress, address stablecoin, uint256 tokenAmount, uint256 lsdTokenAmount, uint256 fee, uint256 unstakeIndex)
+// Solidity: event Unstake(address staker, address poolAddress, address stablecoin, uint256 tokenAmount, uint256 lsdTokenAmount)
 func (_StakeManager *StakeManagerFilterer) WatchUnstake(opts *bind.WatchOpts, sink chan<- *StakeManagerUnstake) (event.Subscription, error) {
 
 	logs, sub, err := _StakeManager.contract.WatchLogs(opts, "Unstake")
@@ -2876,12 +2438,280 @@ func (_StakeManager *StakeManagerFilterer) WatchUnstake(opts *bind.WatchOpts, si
 	}), nil
 }
 
-// ParseUnstake is a log parse operation binding the contract event 0x7d0ea2440900409b6b9ca642e7699a8661591a70ca48516f0b9199115d9ad798.
+// ParseUnstake is a log parse operation binding the contract event 0x844b93bba1dfa65e9a88d080df57fa731c72bebc9653aea6be132abde68c27c3.
 //
-// Solidity: event Unstake(address staker, address poolAddress, address stablecoin, uint256 tokenAmount, uint256 lsdTokenAmount, uint256 fee, uint256 unstakeIndex)
+// Solidity: event Unstake(address staker, address poolAddress, address stablecoin, uint256 tokenAmount, uint256 lsdTokenAmount)
 func (_StakeManager *StakeManagerFilterer) ParseUnstake(log types.Log) (*StakeManagerUnstake, error) {
 	event := new(StakeManagerUnstake)
 	if err := _StakeManager.contract.UnpackLog(event, "Unstake", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// StakeManagerUnstakePausedIterator is returned from FilterUnstakePaused and is used to iterate over the raw logs and unpacked data for UnstakePaused events raised by the StakeManager contract.
+type StakeManagerUnstakePausedIterator struct {
+	Event *StakeManagerUnstakePaused // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *StakeManagerUnstakePausedIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(StakeManagerUnstakePaused)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(StakeManagerUnstakePaused)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *StakeManagerUnstakePausedIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *StakeManagerUnstakePausedIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// StakeManagerUnstakePaused represents a UnstakePaused event raised by the StakeManager contract.
+type StakeManagerUnstakePaused struct {
+	Account common.Address
+	Raw     types.Log // Blockchain specific contextual infos
+}
+
+// FilterUnstakePaused is a free log retrieval operation binding the contract event 0x4b7b286b8b9430bcaea4587c424826c29c9719e1d45599f29de005bdddd177b2.
+//
+// Solidity: event UnstakePaused(address account)
+func (_StakeManager *StakeManagerFilterer) FilterUnstakePaused(opts *bind.FilterOpts) (*StakeManagerUnstakePausedIterator, error) {
+
+	logs, sub, err := _StakeManager.contract.FilterLogs(opts, "UnstakePaused")
+	if err != nil {
+		return nil, err
+	}
+	return &StakeManagerUnstakePausedIterator{contract: _StakeManager.contract, event: "UnstakePaused", logs: logs, sub: sub}, nil
+}
+
+// WatchUnstakePaused is a free log subscription operation binding the contract event 0x4b7b286b8b9430bcaea4587c424826c29c9719e1d45599f29de005bdddd177b2.
+//
+// Solidity: event UnstakePaused(address account)
+func (_StakeManager *StakeManagerFilterer) WatchUnstakePaused(opts *bind.WatchOpts, sink chan<- *StakeManagerUnstakePaused) (event.Subscription, error) {
+
+	logs, sub, err := _StakeManager.contract.WatchLogs(opts, "UnstakePaused")
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(StakeManagerUnstakePaused)
+				if err := _StakeManager.contract.UnpackLog(event, "UnstakePaused", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseUnstakePaused is a log parse operation binding the contract event 0x4b7b286b8b9430bcaea4587c424826c29c9719e1d45599f29de005bdddd177b2.
+//
+// Solidity: event UnstakePaused(address account)
+func (_StakeManager *StakeManagerFilterer) ParseUnstakePaused(log types.Log) (*StakeManagerUnstakePaused, error) {
+	event := new(StakeManagerUnstakePaused)
+	if err := _StakeManager.contract.UnpackLog(event, "UnstakePaused", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// StakeManagerUnstakeUnpausedIterator is returned from FilterUnstakeUnpaused and is used to iterate over the raw logs and unpacked data for UnstakeUnpaused events raised by the StakeManager contract.
+type StakeManagerUnstakeUnpausedIterator struct {
+	Event *StakeManagerUnstakeUnpaused // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *StakeManagerUnstakeUnpausedIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(StakeManagerUnstakeUnpaused)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(StakeManagerUnstakeUnpaused)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *StakeManagerUnstakeUnpausedIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *StakeManagerUnstakeUnpausedIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// StakeManagerUnstakeUnpaused represents a UnstakeUnpaused event raised by the StakeManager contract.
+type StakeManagerUnstakeUnpaused struct {
+	Account common.Address
+	Raw     types.Log // Blockchain specific contextual infos
+}
+
+// FilterUnstakeUnpaused is a free log retrieval operation binding the contract event 0xbcf9b1ed6c153bb21e76eec403e4d72bb6360ae8faa640ce0f55de148f1155ea.
+//
+// Solidity: event UnstakeUnpaused(address account)
+func (_StakeManager *StakeManagerFilterer) FilterUnstakeUnpaused(opts *bind.FilterOpts) (*StakeManagerUnstakeUnpausedIterator, error) {
+
+	logs, sub, err := _StakeManager.contract.FilterLogs(opts, "UnstakeUnpaused")
+	if err != nil {
+		return nil, err
+	}
+	return &StakeManagerUnstakeUnpausedIterator{contract: _StakeManager.contract, event: "UnstakeUnpaused", logs: logs, sub: sub}, nil
+}
+
+// WatchUnstakeUnpaused is a free log subscription operation binding the contract event 0xbcf9b1ed6c153bb21e76eec403e4d72bb6360ae8faa640ce0f55de148f1155ea.
+//
+// Solidity: event UnstakeUnpaused(address account)
+func (_StakeManager *StakeManagerFilterer) WatchUnstakeUnpaused(opts *bind.WatchOpts, sink chan<- *StakeManagerUnstakeUnpaused) (event.Subscription, error) {
+
+	logs, sub, err := _StakeManager.contract.WatchLogs(opts, "UnstakeUnpaused")
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(StakeManagerUnstakeUnpaused)
+				if err := _StakeManager.contract.UnpackLog(event, "UnstakeUnpaused", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseUnstakeUnpaused is a log parse operation binding the contract event 0xbcf9b1ed6c153bb21e76eec403e4d72bb6360ae8faa640ce0f55de148f1155ea.
+//
+// Solidity: event UnstakeUnpaused(address account)
+func (_StakeManager *StakeManagerFilterer) ParseUnstakeUnpaused(log types.Log) (*StakeManagerUnstakeUnpaused, error) {
+	event := new(StakeManagerUnstakeUnpaused)
+	if err := _StakeManager.contract.UnpackLog(event, "UnstakeUnpaused", log); err != nil {
 		return nil, err
 	}
 	event.Raw = log
@@ -3026,142 +2856,6 @@ func (_StakeManager *StakeManagerFilterer) WatchUpgraded(opts *bind.WatchOpts, s
 func (_StakeManager *StakeManagerFilterer) ParseUpgraded(log types.Log) (*StakeManagerUpgraded, error) {
 	event := new(StakeManagerUpgraded)
 	if err := _StakeManager.contract.UnpackLog(event, "Upgraded", log); err != nil {
-		return nil, err
-	}
-	event.Raw = log
-	return event, nil
-}
-
-// StakeManagerWithdrawIterator is returned from FilterWithdraw and is used to iterate over the raw logs and unpacked data for Withdraw events raised by the StakeManager contract.
-type StakeManagerWithdrawIterator struct {
-	Event *StakeManagerWithdraw // Event containing the contract specifics and raw log
-
-	contract *bind.BoundContract // Generic contract to use for unpacking event data
-	event    string              // Event name to use for unpacking event data
-
-	logs chan types.Log        // Log channel receiving the found contract events
-	sub  ethereum.Subscription // Subscription for errors, completion and termination
-	done bool                  // Whether the subscription completed delivering logs
-	fail error                 // Occurred error to stop iteration
-}
-
-// Next advances the iterator to the subsequent event, returning whether there
-// are any more events found. In case of a retrieval or parsing error, false is
-// returned and Error() can be queried for the exact failure.
-func (it *StakeManagerWithdrawIterator) Next() bool {
-	// If the iterator failed, stop iterating
-	if it.fail != nil {
-		return false
-	}
-	// If the iterator completed, deliver directly whatever's available
-	if it.done {
-		select {
-		case log := <-it.logs:
-			it.Event = new(StakeManagerWithdraw)
-			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-				it.fail = err
-				return false
-			}
-			it.Event.Raw = log
-			return true
-
-		default:
-			return false
-		}
-	}
-	// Iterator still in progress, wait for either a data or an error event
-	select {
-	case log := <-it.logs:
-		it.Event = new(StakeManagerWithdraw)
-		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-			it.fail = err
-			return false
-		}
-		it.Event.Raw = log
-		return true
-
-	case err := <-it.sub.Err():
-		it.done = true
-		it.fail = err
-		return it.Next()
-	}
-}
-
-// Error returns any retrieval or parsing error occurred during filtering.
-func (it *StakeManagerWithdrawIterator) Error() error {
-	return it.fail
-}
-
-// Close terminates the iteration process, releasing any pending underlying
-// resources.
-func (it *StakeManagerWithdrawIterator) Close() error {
-	it.sub.Unsubscribe()
-	return nil
-}
-
-// StakeManagerWithdraw represents a Withdraw event raised by the StakeManager contract.
-type StakeManagerWithdraw struct {
-	Staker           common.Address
-	PoolAddress      common.Address
-	UnstakeIndexList []*big.Int
-	Raw              types.Log // Blockchain specific contextual infos
-}
-
-// FilterWithdraw is a free log retrieval operation binding the contract event 0xcdbb3b8ca00299a5a4a191f420fc23a9d08297641ae04dd0cd15f6c989d53972.
-//
-// Solidity: event Withdraw(address staker, address poolAddress, int256[] unstakeIndexList)
-func (_StakeManager *StakeManagerFilterer) FilterWithdraw(opts *bind.FilterOpts) (*StakeManagerWithdrawIterator, error) {
-
-	logs, sub, err := _StakeManager.contract.FilterLogs(opts, "Withdraw")
-	if err != nil {
-		return nil, err
-	}
-	return &StakeManagerWithdrawIterator{contract: _StakeManager.contract, event: "Withdraw", logs: logs, sub: sub}, nil
-}
-
-// WatchWithdraw is a free log subscription operation binding the contract event 0xcdbb3b8ca00299a5a4a191f420fc23a9d08297641ae04dd0cd15f6c989d53972.
-//
-// Solidity: event Withdraw(address staker, address poolAddress, int256[] unstakeIndexList)
-func (_StakeManager *StakeManagerFilterer) WatchWithdraw(opts *bind.WatchOpts, sink chan<- *StakeManagerWithdraw) (event.Subscription, error) {
-
-	logs, sub, err := _StakeManager.contract.WatchLogs(opts, "Withdraw")
-	if err != nil {
-		return nil, err
-	}
-	return event.NewSubscription(func(quit <-chan struct{}) error {
-		defer sub.Unsubscribe()
-		for {
-			select {
-			case log := <-logs:
-				// New log arrived, parse the event and forward to the user
-				event := new(StakeManagerWithdraw)
-				if err := _StakeManager.contract.UnpackLog(event, "Withdraw", log); err != nil {
-					return err
-				}
-				event.Raw = log
-
-				select {
-				case sink <- event:
-				case err := <-sub.Err():
-					return err
-				case <-quit:
-					return nil
-				}
-			case err := <-sub.Err():
-				return err
-			case <-quit:
-				return nil
-			}
-		}
-	}), nil
-}
-
-// ParseWithdraw is a log parse operation binding the contract event 0xcdbb3b8ca00299a5a4a191f420fc23a9d08297641ae04dd0cd15f6c989d53972.
-//
-// Solidity: event Withdraw(address staker, address poolAddress, int256[] unstakeIndexList)
-func (_StakeManager *StakeManagerFilterer) ParseWithdraw(log types.Log) (*StakeManagerWithdraw, error) {
-	event := new(StakeManagerWithdraw)
-	if err := _StakeManager.contract.UnpackLog(event, "Withdraw", log); err != nil {
 		return nil, err
 	}
 	event.Raw = log

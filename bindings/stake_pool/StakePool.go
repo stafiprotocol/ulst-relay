@@ -31,7 +31,7 @@ var (
 
 // StakePoolMetaData contains all meta data concerning the StakePool contract.
 var StakePoolMetaData = &bind.MetaData{
-	ABI: "[{\"type\":\"constructor\",\"inputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"UPGRADE_INTERFACE_VERSION\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"string\",\"internalType\":\"string\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"delegate\",\"inputs\":[{\"name\":\"_depositToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"getDelegated\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"initialize\",\"inputs\":[{\"name\":\"_stakeManagerAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_govInstantManagerAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_govOracleAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_owner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"ondoInstantManager\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contractIOndoInstantManager\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"ondoOracle\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contractIOndoOracle\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"owner\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"payMissingUnbondingFee\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address[]\",\"internalType\":\"address[]\"},{\"name\":\"_amount\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"proxiableUUID\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"stakeManagerAddress\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"totalMissingUnbondingFee\",\"inputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"transferOwnership\",\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"undelegate\",\"inputs\":[{\"name\":\"_receivingToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_undelegateAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"upgradeToAndCall\",\"inputs\":[{\"name\":\"newImplementation\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"data\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[],\"stateMutability\":\"payable\"},{\"type\":\"function\",\"name\":\"version\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint64\",\"internalType\":\"uint64\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"withdrawForStaker\",\"inputs\":[{\"name\":\"_receivingToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_staker\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"event\",\"name\":\"Delegate\",\"inputs\":[{\"name\":\"pool\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Initialized\",\"inputs\":[{\"name\":\"version\",\"type\":\"uint64\",\"indexed\":false,\"internalType\":\"uint64\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"MissingUnbondingFee\",\"inputs\":[{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"inputs\":[{\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"PayMissingUnbondingFee\",\"inputs\":[{\"name\":\"payer\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Undelegate\",\"inputs\":[{\"name\":\"pool\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"rwaToken\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Upgraded\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"WithdrawForStaker\",\"inputs\":[{\"name\":\"staker\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"receivingToken\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AddressEmptyCode\",\"inputs\":[{\"name\":\"target\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"AddressNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AlreadyInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CallerNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CommissionRateInvalid\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ERC1967InvalidImplementation\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"ERC1967NonPayable\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedToCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedToWithdrawForStaker\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"InvalidInitialization\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"LengthNotMatch\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotAuthorizedLsdToken\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitializing\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"SafeERC20FailedOperation\",\"inputs\":[{\"name\":\"token\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"UUPSUnauthorizedCallContext\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"UUPSUnsupportedProxiableUUID\",\"inputs\":[{\"name\":\"slot\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]},{\"type\":\"error\",\"name\":\"ValidatorsEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorsLenExceedLimit\",\"inputs\":[]}]",
+	ABI: "[{\"type\":\"constructor\",\"inputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"UPGRADE_INTERFACE_VERSION\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"string\",\"internalType\":\"string\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"delegate\",\"inputs\":[{\"name\":\"_depositToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"getDelegated\",\"inputs\":[{\"name\":\"_stablecoin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"initialize\",\"inputs\":[{\"name\":\"_stakeManagerAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_govInstantManagerAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_govOracleAddress\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_owner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"ondoInstantManager\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contractIOndoInstantManager\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"ondoOracle\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"contractIOndoOracle\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"owner\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"proxiableUUID\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"setGovInstantManager\",\"inputs\":[{\"name\":\"_govInstantManagerAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"setGovOracle\",\"inputs\":[{\"name\":\"_govOracleAddress\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"stakeManagerAddress\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"transferOwnership\",\"inputs\":[{\"name\":\"_newOwner\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"undelegate\",\"inputs\":[{\"name\":\"_receivingToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_undelegateAmount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"undelegatePaused\",\"inputs\":[{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"upgradeToAndCall\",\"inputs\":[{\"name\":\"newImplementation\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"data\",\"type\":\"bytes\",\"internalType\":\"bytes\"}],\"outputs\":[],\"stateMutability\":\"payable\"},{\"type\":\"function\",\"name\":\"version\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint64\",\"internalType\":\"uint64\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"withdrawForStaker\",\"inputs\":[{\"name\":\"_receivingToken\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_staker\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"event\",\"name\":\"Delegate\",\"inputs\":[{\"name\":\"pool\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"stablecoin\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Initialized\",\"inputs\":[{\"name\":\"version\",\"type\":\"uint64\",\"indexed\":false,\"internalType\":\"uint64\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"OwnershipTransferred\",\"inputs\":[{\"name\":\"previousOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"newOwner\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Undelegate\",\"inputs\":[{\"name\":\"pool\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"rwaToken\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"Upgraded\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"WithdrawForStaker\",\"inputs\":[{\"name\":\"staker\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"receivingToken\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AddressEmptyCode\",\"inputs\":[{\"name\":\"target\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"AddressNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AlreadyInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CallerNotAllowed\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"CommissionRateInvalid\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ERC1967InvalidImplementation\",\"inputs\":[{\"name\":\"implementation\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"ERC1967NonPayable\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedToCall\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"FailedToWithdrawForStaker\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"InvalidInitialization\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"LengthNotMatch\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotAuthorizedLsdToken\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitialized\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"NotInitializing\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"SafeERC20FailedOperation\",\"inputs\":[{\"name\":\"token\",\"type\":\"address\",\"internalType\":\"address\"}]},{\"type\":\"error\",\"name\":\"UUPSUnauthorizedCallContext\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"UUPSUnsupportedProxiableUUID\",\"inputs\":[{\"name\":\"slot\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]},{\"type\":\"error\",\"name\":\"ValidatorsEmpty\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"ValidatorsLenExceedLimit\",\"inputs\":[]}]",
 }
 
 // StakePoolABI is the input ABI used to generate the binding from.
@@ -397,35 +397,35 @@ func (_StakePool *StakePoolCallerSession) StakeManagerAddress() (common.Address,
 	return _StakePool.Contract.StakeManagerAddress(&_StakePool.CallOpts)
 }
 
-// TotalMissingUnbondingFee is a free data retrieval call binding the contract method 0xab9466d2.
+// UndelegatePaused is a free data retrieval call binding the contract method 0x3173dbfb.
 //
-// Solidity: function totalMissingUnbondingFee(address ) view returns(uint256)
-func (_StakePool *StakePoolCaller) TotalMissingUnbondingFee(opts *bind.CallOpts, arg0 common.Address) (*big.Int, error) {
+// Solidity: function undelegatePaused(address ) view returns(bool)
+func (_StakePool *StakePoolCaller) UndelegatePaused(opts *bind.CallOpts, arg0 common.Address) (bool, error) {
 	var out []interface{}
-	err := _StakePool.contract.Call(opts, &out, "totalMissingUnbondingFee", arg0)
+	err := _StakePool.contract.Call(opts, &out, "undelegatePaused", arg0)
 
 	if err != nil {
-		return *new(*big.Int), err
+		return *new(bool), err
 	}
 
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
+	out0 := *abi.ConvertType(out[0], new(bool)).(*bool)
 
 	return out0, err
 
 }
 
-// TotalMissingUnbondingFee is a free data retrieval call binding the contract method 0xab9466d2.
+// UndelegatePaused is a free data retrieval call binding the contract method 0x3173dbfb.
 //
-// Solidity: function totalMissingUnbondingFee(address ) view returns(uint256)
-func (_StakePool *StakePoolSession) TotalMissingUnbondingFee(arg0 common.Address) (*big.Int, error) {
-	return _StakePool.Contract.TotalMissingUnbondingFee(&_StakePool.CallOpts, arg0)
+// Solidity: function undelegatePaused(address ) view returns(bool)
+func (_StakePool *StakePoolSession) UndelegatePaused(arg0 common.Address) (bool, error) {
+	return _StakePool.Contract.UndelegatePaused(&_StakePool.CallOpts, arg0)
 }
 
-// TotalMissingUnbondingFee is a free data retrieval call binding the contract method 0xab9466d2.
+// UndelegatePaused is a free data retrieval call binding the contract method 0x3173dbfb.
 //
-// Solidity: function totalMissingUnbondingFee(address ) view returns(uint256)
-func (_StakePool *StakePoolCallerSession) TotalMissingUnbondingFee(arg0 common.Address) (*big.Int, error) {
-	return _StakePool.Contract.TotalMissingUnbondingFee(&_StakePool.CallOpts, arg0)
+// Solidity: function undelegatePaused(address ) view returns(bool)
+func (_StakePool *StakePoolCallerSession) UndelegatePaused(arg0 common.Address) (bool, error) {
+	return _StakePool.Contract.UndelegatePaused(&_StakePool.CallOpts, arg0)
 }
 
 // Version is a free data retrieval call binding the contract method 0x54fd4d50.
@@ -501,25 +501,46 @@ func (_StakePool *StakePoolTransactorSession) Initialize(_stakeManagerAddress co
 	return _StakePool.Contract.Initialize(&_StakePool.TransactOpts, _stakeManagerAddress, _govInstantManagerAddress, _govOracleAddress, _owner)
 }
 
-// PayMissingUnbondingFee is a paid mutator transaction binding the contract method 0xb355e98a.
+// SetGovInstantManager is a paid mutator transaction binding the contract method 0x59e13453.
 //
-// Solidity: function payMissingUnbondingFee(address[] _stablecoin, uint256[] _amount) returns()
-func (_StakePool *StakePoolTransactor) PayMissingUnbondingFee(opts *bind.TransactOpts, _stablecoin []common.Address, _amount []*big.Int) (*types.Transaction, error) {
-	return _StakePool.contract.Transact(opts, "payMissingUnbondingFee", _stablecoin, _amount)
+// Solidity: function setGovInstantManager(address _govInstantManagerAddress) returns()
+func (_StakePool *StakePoolTransactor) SetGovInstantManager(opts *bind.TransactOpts, _govInstantManagerAddress common.Address) (*types.Transaction, error) {
+	return _StakePool.contract.Transact(opts, "setGovInstantManager", _govInstantManagerAddress)
 }
 
-// PayMissingUnbondingFee is a paid mutator transaction binding the contract method 0xb355e98a.
+// SetGovInstantManager is a paid mutator transaction binding the contract method 0x59e13453.
 //
-// Solidity: function payMissingUnbondingFee(address[] _stablecoin, uint256[] _amount) returns()
-func (_StakePool *StakePoolSession) PayMissingUnbondingFee(_stablecoin []common.Address, _amount []*big.Int) (*types.Transaction, error) {
-	return _StakePool.Contract.PayMissingUnbondingFee(&_StakePool.TransactOpts, _stablecoin, _amount)
+// Solidity: function setGovInstantManager(address _govInstantManagerAddress) returns()
+func (_StakePool *StakePoolSession) SetGovInstantManager(_govInstantManagerAddress common.Address) (*types.Transaction, error) {
+	return _StakePool.Contract.SetGovInstantManager(&_StakePool.TransactOpts, _govInstantManagerAddress)
 }
 
-// PayMissingUnbondingFee is a paid mutator transaction binding the contract method 0xb355e98a.
+// SetGovInstantManager is a paid mutator transaction binding the contract method 0x59e13453.
 //
-// Solidity: function payMissingUnbondingFee(address[] _stablecoin, uint256[] _amount) returns()
-func (_StakePool *StakePoolTransactorSession) PayMissingUnbondingFee(_stablecoin []common.Address, _amount []*big.Int) (*types.Transaction, error) {
-	return _StakePool.Contract.PayMissingUnbondingFee(&_StakePool.TransactOpts, _stablecoin, _amount)
+// Solidity: function setGovInstantManager(address _govInstantManagerAddress) returns()
+func (_StakePool *StakePoolTransactorSession) SetGovInstantManager(_govInstantManagerAddress common.Address) (*types.Transaction, error) {
+	return _StakePool.Contract.SetGovInstantManager(&_StakePool.TransactOpts, _govInstantManagerAddress)
+}
+
+// SetGovOracle is a paid mutator transaction binding the contract method 0xc4900ad7.
+//
+// Solidity: function setGovOracle(address _govOracleAddress) returns()
+func (_StakePool *StakePoolTransactor) SetGovOracle(opts *bind.TransactOpts, _govOracleAddress common.Address) (*types.Transaction, error) {
+	return _StakePool.contract.Transact(opts, "setGovOracle", _govOracleAddress)
+}
+
+// SetGovOracle is a paid mutator transaction binding the contract method 0xc4900ad7.
+//
+// Solidity: function setGovOracle(address _govOracleAddress) returns()
+func (_StakePool *StakePoolSession) SetGovOracle(_govOracleAddress common.Address) (*types.Transaction, error) {
+	return _StakePool.Contract.SetGovOracle(&_StakePool.TransactOpts, _govOracleAddress)
+}
+
+// SetGovOracle is a paid mutator transaction binding the contract method 0xc4900ad7.
+//
+// Solidity: function setGovOracle(address _govOracleAddress) returns()
+func (_StakePool *StakePoolTransactorSession) SetGovOracle(_govOracleAddress common.Address) (*types.Transaction, error) {
+	return _StakePool.Contract.SetGovOracle(&_StakePool.TransactOpts, _govOracleAddress)
 }
 
 // TransferOwnership is a paid mutator transaction binding the contract method 0xf2fde38b.
@@ -876,141 +897,6 @@ func (_StakePool *StakePoolFilterer) ParseInitialized(log types.Log) (*StakePool
 	return event, nil
 }
 
-// StakePoolMissingUnbondingFeeIterator is returned from FilterMissingUnbondingFee and is used to iterate over the raw logs and unpacked data for MissingUnbondingFee events raised by the StakePool contract.
-type StakePoolMissingUnbondingFeeIterator struct {
-	Event *StakePoolMissingUnbondingFee // Event containing the contract specifics and raw log
-
-	contract *bind.BoundContract // Generic contract to use for unpacking event data
-	event    string              // Event name to use for unpacking event data
-
-	logs chan types.Log        // Log channel receiving the found contract events
-	sub  ethereum.Subscription // Subscription for errors, completion and termination
-	done bool                  // Whether the subscription completed delivering logs
-	fail error                 // Occurred error to stop iteration
-}
-
-// Next advances the iterator to the subsequent event, returning whether there
-// are any more events found. In case of a retrieval or parsing error, false is
-// returned and Error() can be queried for the exact failure.
-func (it *StakePoolMissingUnbondingFeeIterator) Next() bool {
-	// If the iterator failed, stop iterating
-	if it.fail != nil {
-		return false
-	}
-	// If the iterator completed, deliver directly whatever's available
-	if it.done {
-		select {
-		case log := <-it.logs:
-			it.Event = new(StakePoolMissingUnbondingFee)
-			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-				it.fail = err
-				return false
-			}
-			it.Event.Raw = log
-			return true
-
-		default:
-			return false
-		}
-	}
-	// Iterator still in progress, wait for either a data or an error event
-	select {
-	case log := <-it.logs:
-		it.Event = new(StakePoolMissingUnbondingFee)
-		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-			it.fail = err
-			return false
-		}
-		it.Event.Raw = log
-		return true
-
-	case err := <-it.sub.Err():
-		it.done = true
-		it.fail = err
-		return it.Next()
-	}
-}
-
-// Error returns any retrieval or parsing error occurred during filtering.
-func (it *StakePoolMissingUnbondingFeeIterator) Error() error {
-	return it.fail
-}
-
-// Close terminates the iteration process, releasing any pending underlying
-// resources.
-func (it *StakePoolMissingUnbondingFeeIterator) Close() error {
-	it.sub.Unsubscribe()
-	return nil
-}
-
-// StakePoolMissingUnbondingFee represents a MissingUnbondingFee event raised by the StakePool contract.
-type StakePoolMissingUnbondingFee struct {
-	Stablecoin common.Address
-	Amount     *big.Int
-	Raw        types.Log // Blockchain specific contextual infos
-}
-
-// FilterMissingUnbondingFee is a free log retrieval operation binding the contract event 0xbea589036b1df2135726bf5c0a4dc245ef6bf8cbd6af638dfc2ccf3321f38ed1.
-//
-// Solidity: event MissingUnbondingFee(address stablecoin, uint256 amount)
-func (_StakePool *StakePoolFilterer) FilterMissingUnbondingFee(opts *bind.FilterOpts) (*StakePoolMissingUnbondingFeeIterator, error) {
-
-	logs, sub, err := _StakePool.contract.FilterLogs(opts, "MissingUnbondingFee")
-	if err != nil {
-		return nil, err
-	}
-	return &StakePoolMissingUnbondingFeeIterator{contract: _StakePool.contract, event: "MissingUnbondingFee", logs: logs, sub: sub}, nil
-}
-
-// WatchMissingUnbondingFee is a free log subscription operation binding the contract event 0xbea589036b1df2135726bf5c0a4dc245ef6bf8cbd6af638dfc2ccf3321f38ed1.
-//
-// Solidity: event MissingUnbondingFee(address stablecoin, uint256 amount)
-func (_StakePool *StakePoolFilterer) WatchMissingUnbondingFee(opts *bind.WatchOpts, sink chan<- *StakePoolMissingUnbondingFee) (event.Subscription, error) {
-
-	logs, sub, err := _StakePool.contract.WatchLogs(opts, "MissingUnbondingFee")
-	if err != nil {
-		return nil, err
-	}
-	return event.NewSubscription(func(quit <-chan struct{}) error {
-		defer sub.Unsubscribe()
-		for {
-			select {
-			case log := <-logs:
-				// New log arrived, parse the event and forward to the user
-				event := new(StakePoolMissingUnbondingFee)
-				if err := _StakePool.contract.UnpackLog(event, "MissingUnbondingFee", log); err != nil {
-					return err
-				}
-				event.Raw = log
-
-				select {
-				case sink <- event:
-				case err := <-sub.Err():
-					return err
-				case <-quit:
-					return nil
-				}
-			case err := <-sub.Err():
-				return err
-			case <-quit:
-				return nil
-			}
-		}
-	}), nil
-}
-
-// ParseMissingUnbondingFee is a log parse operation binding the contract event 0xbea589036b1df2135726bf5c0a4dc245ef6bf8cbd6af638dfc2ccf3321f38ed1.
-//
-// Solidity: event MissingUnbondingFee(address stablecoin, uint256 amount)
-func (_StakePool *StakePoolFilterer) ParseMissingUnbondingFee(log types.Log) (*StakePoolMissingUnbondingFee, error) {
-	event := new(StakePoolMissingUnbondingFee)
-	if err := _StakePool.contract.UnpackLog(event, "MissingUnbondingFee", log); err != nil {
-		return nil, err
-	}
-	event.Raw = log
-	return event, nil
-}
-
 // StakePoolOwnershipTransferredIterator is returned from FilterOwnershipTransferred and is used to iterate over the raw logs and unpacked data for OwnershipTransferred events raised by the StakePool contract.
 type StakePoolOwnershipTransferredIterator struct {
 	Event *StakePoolOwnershipTransferred // Event containing the contract specifics and raw log
@@ -1158,142 +1044,6 @@ func (_StakePool *StakePoolFilterer) WatchOwnershipTransferred(opts *bind.WatchO
 func (_StakePool *StakePoolFilterer) ParseOwnershipTransferred(log types.Log) (*StakePoolOwnershipTransferred, error) {
 	event := new(StakePoolOwnershipTransferred)
 	if err := _StakePool.contract.UnpackLog(event, "OwnershipTransferred", log); err != nil {
-		return nil, err
-	}
-	event.Raw = log
-	return event, nil
-}
-
-// StakePoolPayMissingUnbondingFeeIterator is returned from FilterPayMissingUnbondingFee and is used to iterate over the raw logs and unpacked data for PayMissingUnbondingFee events raised by the StakePool contract.
-type StakePoolPayMissingUnbondingFeeIterator struct {
-	Event *StakePoolPayMissingUnbondingFee // Event containing the contract specifics and raw log
-
-	contract *bind.BoundContract // Generic contract to use for unpacking event data
-	event    string              // Event name to use for unpacking event data
-
-	logs chan types.Log        // Log channel receiving the found contract events
-	sub  ethereum.Subscription // Subscription for errors, completion and termination
-	done bool                  // Whether the subscription completed delivering logs
-	fail error                 // Occurred error to stop iteration
-}
-
-// Next advances the iterator to the subsequent event, returning whether there
-// are any more events found. In case of a retrieval or parsing error, false is
-// returned and Error() can be queried for the exact failure.
-func (it *StakePoolPayMissingUnbondingFeeIterator) Next() bool {
-	// If the iterator failed, stop iterating
-	if it.fail != nil {
-		return false
-	}
-	// If the iterator completed, deliver directly whatever's available
-	if it.done {
-		select {
-		case log := <-it.logs:
-			it.Event = new(StakePoolPayMissingUnbondingFee)
-			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-				it.fail = err
-				return false
-			}
-			it.Event.Raw = log
-			return true
-
-		default:
-			return false
-		}
-	}
-	// Iterator still in progress, wait for either a data or an error event
-	select {
-	case log := <-it.logs:
-		it.Event = new(StakePoolPayMissingUnbondingFee)
-		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
-			it.fail = err
-			return false
-		}
-		it.Event.Raw = log
-		return true
-
-	case err := <-it.sub.Err():
-		it.done = true
-		it.fail = err
-		return it.Next()
-	}
-}
-
-// Error returns any retrieval or parsing error occurred during filtering.
-func (it *StakePoolPayMissingUnbondingFeeIterator) Error() error {
-	return it.fail
-}
-
-// Close terminates the iteration process, releasing any pending underlying
-// resources.
-func (it *StakePoolPayMissingUnbondingFeeIterator) Close() error {
-	it.sub.Unsubscribe()
-	return nil
-}
-
-// StakePoolPayMissingUnbondingFee represents a PayMissingUnbondingFee event raised by the StakePool contract.
-type StakePoolPayMissingUnbondingFee struct {
-	Payer      common.Address
-	Stablecoin common.Address
-	Amount     *big.Int
-	Raw        types.Log // Blockchain specific contextual infos
-}
-
-// FilterPayMissingUnbondingFee is a free log retrieval operation binding the contract event 0x5b5eacdccf2a7feab7735a38c3766084802e999d6849f94928b86af877439b38.
-//
-// Solidity: event PayMissingUnbondingFee(address payer, address stablecoin, uint256 amount)
-func (_StakePool *StakePoolFilterer) FilterPayMissingUnbondingFee(opts *bind.FilterOpts) (*StakePoolPayMissingUnbondingFeeIterator, error) {
-
-	logs, sub, err := _StakePool.contract.FilterLogs(opts, "PayMissingUnbondingFee")
-	if err != nil {
-		return nil, err
-	}
-	return &StakePoolPayMissingUnbondingFeeIterator{contract: _StakePool.contract, event: "PayMissingUnbondingFee", logs: logs, sub: sub}, nil
-}
-
-// WatchPayMissingUnbondingFee is a free log subscription operation binding the contract event 0x5b5eacdccf2a7feab7735a38c3766084802e999d6849f94928b86af877439b38.
-//
-// Solidity: event PayMissingUnbondingFee(address payer, address stablecoin, uint256 amount)
-func (_StakePool *StakePoolFilterer) WatchPayMissingUnbondingFee(opts *bind.WatchOpts, sink chan<- *StakePoolPayMissingUnbondingFee) (event.Subscription, error) {
-
-	logs, sub, err := _StakePool.contract.WatchLogs(opts, "PayMissingUnbondingFee")
-	if err != nil {
-		return nil, err
-	}
-	return event.NewSubscription(func(quit <-chan struct{}) error {
-		defer sub.Unsubscribe()
-		for {
-			select {
-			case log := <-logs:
-				// New log arrived, parse the event and forward to the user
-				event := new(StakePoolPayMissingUnbondingFee)
-				if err := _StakePool.contract.UnpackLog(event, "PayMissingUnbondingFee", log); err != nil {
-					return err
-				}
-				event.Raw = log
-
-				select {
-				case sink <- event:
-				case err := <-sub.Err():
-					return err
-				case <-quit:
-					return nil
-				}
-			case err := <-sub.Err():
-				return err
-			case <-quit:
-				return nil
-			}
-		}
-	}), nil
-}
-
-// ParsePayMissingUnbondingFee is a log parse operation binding the contract event 0x5b5eacdccf2a7feab7735a38c3766084802e999d6849f94928b86af877439b38.
-//
-// Solidity: event PayMissingUnbondingFee(address payer, address stablecoin, uint256 amount)
-func (_StakePool *StakePoolFilterer) ParsePayMissingUnbondingFee(log types.Log) (*StakePoolPayMissingUnbondingFee, error) {
-	event := new(StakePoolPayMissingUnbondingFee)
-	if err := _StakePool.contract.UnpackLog(event, "PayMissingUnbondingFee", log); err != nil {
 		return nil, err
 	}
 	event.Raw = log
