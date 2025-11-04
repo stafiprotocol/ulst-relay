@@ -148,8 +148,8 @@ func startCmd() *cobra.Command {
 	// Required flags
 	cmd.Flags().String(flagAccount, "", "Account hex string address")
 	cmd.Flags().String(flagStakeManager, "", "Stake manager contract address")
-	cmd.MarkFlagRequired(flagAccount)
-	cmd.MarkFlagRequired(flagStakeManager)
+	_ = cmd.MarkFlagRequired(flagAccount)
+	_ = cmd.MarkFlagRequired(flagStakeManager)
 
 	return cmd
 }

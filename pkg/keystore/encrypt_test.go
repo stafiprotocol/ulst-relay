@@ -81,7 +81,7 @@ func createTestFile(t *testing.T) (*os.File, string) {
 func TestEncryptAndDecryptFromFile_Secp256k1(t *testing.T) {
 	password := []byte("noot")
 	file, fp := createTestFile(t)
-	defer os.Remove(fp)
+	defer os.Remove(fp) //nolint:errcheck
 
 	kp, err := secp256k1.GenerateKeypair()
 	if err != nil {
