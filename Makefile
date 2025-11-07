@@ -22,6 +22,9 @@ install: build
 build-linux:
 	@GOOS=linux GOARCH=amd64 go build --mod readonly $(BUILD_FLAGS) -o ./build/ulst-relay main.go
 
+# cd to contracts directory and run the following commands
+# forge inspect StakeManager abi --json > ../ulst-relay/bindings/stake_manager/StakeManager_abi.json
+# forge inspect StakePool abi --json > ../ulst-relay/bindings/stake_pool/StakePool_abi.json
 abi:
 	@echo " > \033[32mGenabi...\033[0m "
 	abigen --abi ./bindings/stake_manager/StakeManager_abi.json --pkg stake_manager --type StakeManager --out ./bindings/stake_manager/StakeManager.go
